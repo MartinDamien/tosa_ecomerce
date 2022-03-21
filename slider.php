@@ -6,7 +6,6 @@
       <link rel="stylesheet" href="style.css">
 
    <header>
-      <h4 class="mb-3">ACCUEIL</h4>
       <nav>
       <label for="toggle">☰</label>
       <input type="checkbox" id="toggle">
@@ -19,11 +18,7 @@
    </header>
    <br>
    <br>
-   <br>
-   <br>
    <body>
-   <br>
-   <br>
    <div class="container">
       <div class="carousel">
          <div class="carousel__face"></div>
