@@ -36,11 +36,14 @@
          <div class="carousel__face"></div>
       </div>
    </div>
+
    </body>
       
    
   
    <footer>
-      
+      <div class="footer">
+         <a href="contact.html">CONTACT</a>
+      </div>
    </footer>
 </html>
