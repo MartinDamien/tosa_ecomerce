@@ -1,9 +1,13 @@
+body
+{}
+
 header
 {
     position: fixed;
     top: 0%;
     border: 2px black solid;
     background-color: black;
+    z-index: 1;
 }
 
 section
@@ -30,7 +34,7 @@ h1
     column-gap: 1em;
     row-gap: 1em;
     position:relative;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 #produits div

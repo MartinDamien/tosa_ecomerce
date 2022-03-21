@@ -1,11 +1,18 @@
+<?php 
+session_start();
+?>
 <!DOCTYPE html>
 <html>
    
       <meta charset="utf-8">
-      <title>Page d'accueil</title>
+      <title>ACCUEIL</title>
       <link rel="stylesheet" href="style.css">
 
    <header>
+      <h2>ACCUEIL</h2>
+      <br>
+      <br>
+      <br>
       <nav>
       <label for="toggle">☰</label>
       <input type="checkbox" id="toggle">
@@ -33,11 +40,13 @@
       </div>
    </div>
 
-      <?php
-         // https://devstory.net/12011/bootstrap-carousel
-      ?>
-      <footer>
-
-      </footer>
    </body>
+      
+   
+  
+   <footer>
+      <div class="footer">
+         <a href="contact.html">CONTACT</a>
+      </div>
+   </footer>
 </html>
