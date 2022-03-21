@@ -7,28 +7,37 @@
 
    <header>
       <h4 class="mb-3">ACCUEIL</h4>
+      <nav>
+      <label for="toggle">☰</label>
+      <input type="checkbox" id="toggle">
+         <div class="main_pages">
+               <a href="inscription/inscription.html">Inscription</a>
+               <a href="connection/connecter.html">Connexion</a>
+               <a href="produits.html">Produits</a>
+         </div>
+      </nav>
    </header>
+   <br>
+   <br>
+   <br>
+   <br>
    <body>
-      <br>
-      <div class="container">
-  <div class="carousel">
-    <div class="carousel__face"></div>
-    <div class="carousel__face"></div>
-    <div class="carousel__face"></div>
-    <div class="carousel__face"></div>
-    <div class="carousel__face"></div>
-    <div class="carousel__face"></div>
-    <div class="carousel__face"></div>
-    <div class="carousel__face"></div>
-    <div class="carousel__face"></div>
-   
-  </div>
-</div>
-<div>
-   <a href="inscription/inscription.html">Inscription</a>
-   <a href="connection/connecter.html">Connexion</a>
-   <a href="produits.html">Produits</a>
-</div>
+   <br>
+   <br>
+   <div class="container">
+      <div class="carousel">
+         <div class="carousel__face"></div>
+         <div class="carousel__face"></div>
+         <div class="carousel__face"></div>
+         <div class="carousel__face"></div>
+         <div class="carousel__face"></div>
+         <div class="carousel__face"></div>
+         <div class="carousel__face"></div>
+         <div class="carousel__face"></div>
+         <div class="carousel__face"></div>
+      </div>
+   </div>
+
       <?php
          // https://devstory.net/12011/bootstrap-carousel
       ?>
