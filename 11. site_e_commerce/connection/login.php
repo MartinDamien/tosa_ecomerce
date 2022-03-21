@@ -7,7 +7,13 @@
     $email = $_POST['email'];
     $password = $_POST['password'];
 
-    $sql = $pdo->prepare("SELECT * FROM user WHERE email = ? and password = ?");
+    if (password_verify($password, $hash)) {
+        echo 'Le mot de passe est valide !';
+    } else {
+        echo 'Le mot de passe est invalide.';
+    }
+
+    $sql = $pdo->prepare("SELECT * FROM utilisateur WHERE email = ? and password = ?");
     $sql->execute([$email, $password]);
     if ($sql->rowCount() >= 1) {
         echo "bienvenue";
