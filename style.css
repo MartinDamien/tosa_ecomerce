@@ -62,9 +62,25 @@
     background-image: url("zyro-image1.png");
     transform: rotateY( 80deg) translateZ(430px); }
   .carousel__face:nth-child(4) {
-    background-image: url("img2.jpg");
-    transform: rotateY(80deg) translateZ(430px);
-  }
+    background-image: url("img2.png");
+    transform: rotateY( 120deg) translateZ(430px); }
+  .carousel__face:nth-child(5) {
+    background-image: url("img3.jpg");
+    transform: rotateY( 160deg) translateZ(430px); }
+  .carousel__face:nth-child(6) {
+    background-image: url("img4.jpg");
+    transform: rotateY( 200deg) translateZ(430px); }
+  .carousel__face:nth-child(7) {
+    background-image: url("img5.jpg");
+    transform: rotateY( 240deg) translateZ(430px); }
+  .carousel__face:nth-child(8) {
+    background-image: url("img6.jpg");
+    transform: rotateY( 280deg) translateZ(430px); }
+  .carousel__face:nth-child(9) {
+    background-image: url("img7.jpg");
+    transform: rotateY( 320deg) translateZ(430px); }
+      
+    
   
   
   @keyframes rotate360 {

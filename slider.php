@@ -12,15 +12,22 @@
       <br>
       <div class="container">
   <div class="carousel">
-    <div class="carousel__face"><span></span></div>
-    <div class="carousel__face"><span></span></div>
-    <div class="carousel__face"><span></span></div>
+    <div class="carousel__face"></div>
+    <div class="carousel__face"></div>
+    <div class="carousel__face"></div>
+    <div class="carousel__face"></div>
+    <div class="carousel__face"></div>
+    <div class="carousel__face"></div>
+    <div class="carousel__face"></div>
+    <div class="carousel__face"></div>
+    <div class="carousel__face"></div>
    
   </div>
 </div>
 <div>
    <a href="inscription/inscription.html">Inscription</a>
    <a href="connection/connecter.html">Connexion</a>
+   <a href="produits.html">Produits</a>
 </div>
       <?php
          // https://devstory.net/12011/bootstrap-carousel
