@@ -14,7 +14,7 @@
          <div id="myCarousel" class="carousel slide border" data-ride="carousel">
             <div class="carousel-inner">
                <div class="carousel-item active">
-                  <img class="d-block w-100" src="img1.jpg" alt="img1">
+                  <img class="d-block w-100" src="zyro-image" alt="img1">
                   <div class="carousel-caption d-none d-sm-block">
            
                   </div>
@@ -52,7 +52,7 @@
          // https://devstory.net/12011/bootstrap-carousel
       ?>
       <footer>
-         
+
       </footer>
    </body>
 </html>
