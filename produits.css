@@ -1,7 +1,25 @@
+header
+{
+    position: fixed;
+    top: 0%;
+    border: 2px black solid;
+    background-color: black;
+}
+
+section
+{
+    margin-top: 100px;
+}
+
+h1
+{
+    color: white;
+}
+
 #titre 
 {
     position: sticky;
-    color: rgb(0, 183, 255);
+    font-weight: bolder;
 }
 
 #produits
@@ -18,15 +36,57 @@
 #produits div
 {
     border: 2px;
-    background-color: aqua;
-
 }
 
 #p1
 {
-    background-image: url("https://m.media-amazon.com/images/I/61fWt10SX9S._AC_UL320_.jpg");
     background-repeat: no-repeat;
     background-origin: padding-box;
     background-position: center ;
 
 }
+
+/* Image Hover */
+.container {
+    position: relative;
+    width: 100%;
+  }
+  
+  .image {
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 13%;
+    max-width: 400px;
+    max-height: 400px;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    object-fit: cover;
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .container:hover .image {
+    opacity: 0.3;
+  }
+  
+  .container:hover .middle {
+    opacity: 1;
+  }
+  
+  .text {
+    background-color: crimson;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+  }
