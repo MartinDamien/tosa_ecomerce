@@ -32,12 +32,13 @@
          <div class="carousel__face"></div>
       </div>
    </div>
-
+   </body>
       <?php
          // https://devstory.net/12011/bootstrap-carousel
       ?>
-      <footer>
-
-      </footer>
-   </body>
+   
+  
+   <footer>
+      
+   </footer>
 </html>
