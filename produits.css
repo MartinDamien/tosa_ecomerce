@@ -6,6 +6,27 @@
 
 #produits
 {
+    display: grid;
+    grid-template-columns: repeat(3, 29%);
+    grid-template-rows: repeat(3, 400px);
+    column-gap: 1em;
+    row-gap: 1em;
     position:relative;
-    
+    justify-content: space-around;
+}
+
+#produits div
+{
+    border: 2px;
+    background-color: aqua;
+
+}
+
+#p1
+{
+    background-image: url("https://m.media-amazon.com/images/I/61fWt10SX9S._AC_UL320_.jpg");
+    background-repeat: no-repeat;
+    background-origin: padding-box;
+    background-position: center ;
+
 }
