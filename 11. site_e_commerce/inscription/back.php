@@ -13,10 +13,10 @@
     $role = $_POST['role'];
 
     //integration des données dans la BdD
-    $sql = $pdo->prepare("INSERT INTO user(id,email,password,nom,prenom,ID_role) VALUE(NULL,?,?,?,?,?)");
+    $sql = $pdo->prepare("INSERT INTO utilisateur(id,email,password,nom,prenom,ID_role) VALUE(NULL,?,?,?,?,?)");
     $sql->execute([$mail, $hash_password, $nom, $prenom, $role]);
 
-    $sqlmail = $pdo->prepare("SELECT * FROM `user` WHERE `email` LIKE = ?");
+    $sqlmail = $pdo->prepare("SELECT * FROM `utilisateur` WHERE `email` LIKE = ?");
     $sqlmail->execute([$mail]);
     if ($sqlmail->rowCount() == 1) {
         redirection:
@@ -36,7 +36,7 @@
 
 <body>
 
-    <a href="../mainpage.html">retour à la page principale</a>
+    <a href="../slider.php">retour à la page principale</a>
 </body>
 
 </html>
