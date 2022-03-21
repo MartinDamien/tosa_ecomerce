@@ -1,0 +1,19 @@
+img{
+    width: 100%;
+    height: auto;
+    margin: auto;
+ }
+ h4{
+    text-align: center;
+    font-size: 30px;
+    color: white
+ }
+ header{
+    background-color: black;
+    height: 50px;
+    
+ }
+ footer{
+     background-color: balck;
+     height: 50px;
+ }
