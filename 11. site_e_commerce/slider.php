@@ -18,6 +18,10 @@
    
   </div>
 </div>
+<div>
+   <a href="inscription/inscription.html"></a>
+   <a href="connection/connecter.html"></a>
+</div>
       <?php
          // https://devstory.net/12011/bootstrap-carousel
       ?>
