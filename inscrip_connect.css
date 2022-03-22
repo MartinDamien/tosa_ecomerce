@@ -43,10 +43,10 @@ button {
     font-size: 20px;
     font-weight: 800;
     padding: 5px;
-    background-color: #00C90D;
-    -webkit-box-shadow: 0 0 20px 0 #00C90D;
-    -moz-box-shadow: 0 0 20px 0 #00C90D;
-    box-shadow: 0 0 20px 0 #00C90D;
+    background-color: #c90000;
+    -webkit-box-shadow: 0 0 20px 0 #c90000;
+    -moz-box-shadow: 0 0 20px 0 #c90000;
+    box-shadow: 0 0 20px 0 #c90000;
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
