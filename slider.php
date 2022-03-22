@@ -19,7 +19,7 @@ session_start();
          <div class="main_pages">
                <a href="inscription/inscription.html">Inscription</a>
                <a href="connection/connecter.html">Connexion</a>
-               <a href="produits.html">Produits</a>
+               <a href="produits.php">Produits</a>
          </div>
       </nav>
    </header>

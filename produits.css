@@ -1,13 +1,52 @@
-body
-{}
+
 
 header
 {
-    position: fixed;
     top: 0%;
-    border: 2px black solid;
+    border-radius: 3px;
     background-color: black;
     z-index: 1;
+}
+
+/* Navbar */
+
+nav 
+  {
+    position: sticky;
+      text-align: center;
+      margin: 15px auto;
+      width: 50%;
+      height: 100px;
+      background: black;
+  }
+  nav .main_pages 
+  {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+  }
+  nav .main_pages a 
+  {
+      width: 25%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 70px;
+      text-decoration: none;
+      color: white;
+      font-size: 20px;
+  }
+  nav a:hover 
+  {
+      background: crimson;
+      opacity: 0.9;
+  }
+
+
+
+body
+{
+  background-color:lightgray;
 }
 
 section
@@ -90,6 +129,7 @@ h1
   
   .text {
     background-color: crimson;
+    border-radius: 2px;
     color: white;
     font-size: 16px;
     padding: 16px 32px;

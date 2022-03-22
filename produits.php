@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,19 +9,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="produits.css" />
-    <title>Notre gammes de produits</title>
+    <title>Nos produits</title>
 </head>
 <body>
     <header>
+      <nav>
         <div id="navbar">
-            <h1 id="titre">Notre sélection de produits haut de gamme :</h1>
+            <label for="toggle">☰</label>
+            <input type="checkbox" id="toggle">
+            <div class="main_pages">
+                <a href="inscription/inscription.html">Inscription</a>
+                <a href="connection/connecter.html">Connexion</a>
+                <a href="produits.php">Produits</a>
+            </div>
         </div>
+      </nav>
     </header>
 
     <section>
         <div id="produits">
             <div class="container">
-                <img src="https://m.media-amazon.com/images/I/61fWt10SX9S._AC_UL320_.jpg" alt="Patrick" class="image" style="width:100%">
+                <img src="img/patrick.png" alt="Patrick" class="image" style="width:100%">
                 <div class="middle">
                 <div class="text">
                     <h3>Imprimante à Patrick</h3>
@@ -26,7 +38,7 @@
                 </div>
             </div>
             <div class="container">
-                <img src="https://www.drawmypad.com/wp-content/uploads/manette-PS4-custom-playstation-4-sony-personnalisee-drawmypad-kanadian-leaves-canabis-1-600x600.png" alt="Manette" class="image" style="width:100%">
+                <img src="img/manette.png" alt="Manette" class="image" style="width:100%">
                 <div class="middle">
                 <div class="text">
                     <h3>Manette de kéké kikou</h3>
@@ -35,7 +47,7 @@
                 </div>
             </div>
             <div class="container">
-                <img src="http://www.aerobuzz.fr/wp-content/uploads/2016/06/jpg_ah64_apache_-_copie.jpg" alt="Apashe" class="image" style="width:100%">
+                <img src="img/apashe.png" alt="Apashe" class="image" style="width:100%">
                 <div class="middle">
                 <div class="text">
                     <h3>Hélicoptère de Combat Apashe</h3>
@@ -44,7 +56,7 @@
                 </div>
             </div>
             <div class="container">
-                <img src="https://www.ergo-site.com/wp-content/uploads/2021/02/souris-ergonomique-Sans-Fil-delux.jpg" alt="Souris" class="image" style="width:100%">
+                <img src="img/souris.png" alt="Souris" class="image" style="width:100%">
                 <div class="middle">
                 <div class="text">
                     <h3>Souris Ergonomique</h3>
@@ -53,7 +65,7 @@
                 </div>
             </div>
             <div class="container">
-                <img src="img/davidson.jpg" alt="Hérisson Motard" class="image" style="width:100%">
+                <img src="img/davidson.png" alt="Hérisson Motard" class="image" style="width:100%">
                 <div class="middle">
                 <div class="text">
                     <h3>Hérisson biker</h3>
@@ -62,7 +74,7 @@
                 </div>
             </div>
             <div class="container">
-                <img src="img/lauréat.jpg" alt="Chat Mignon" class="image" style="width:100%">
+                <img src="img/lauréat.png" alt="Chat Mignon" class="image" style="width:100%">
                 <div class="middle">
                 <div class="text">
                     <h3>Chat Lauréat de beauté</h3>
@@ -80,7 +92,7 @@
                 </div>
             </div>
             <div class="container">
-                <img src="img/sourisan.jpg" alt="Souris non ergonomique" class="image" style="width:100%">
+                <img src="img/sourisan.png" alt="Souris non ergonomique" class="image" style="width:100%">
                 <div class="middle">
                 <div class="text">
                     <h3>Souris</h3>
@@ -89,11 +101,11 @@
                 </div>
             </div>
             <div class="container">
-                <img src="https://m.media-amazon.com/images/I/61fWt10SX9S._AC_UL320_.jpg" alt="Patrick" class="image" style="width:100%">
+                <img src="img/profbio.png" alt="Prof de Bio initiant deux jeunes de la génération Y au Metaverse" class="image" style="width:100%">
                 <div class="middle">
                 <div class="text">
-                    <h3>Imprimante à Patrick</h3>
-                    <p>Blablablablabla</p>
+                    <h3>Professeur de Bio</h3>
+                    <p>Prof de Bio initiant deux jeunes de la génération Y au Metaverse, fourni avec deux élèves et deux casques VR selon les stocks disponibles.</p>
                 </div>
                 </div>
             </div>
