@@ -4,32 +4,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 .wrapper
 {
-    width: 940px;
-    margin: 0 auto;    
-    padding: 0 10px;
+  width: 940px;
+  margin: 0 auto;    
+  padding: 0 10px;
 }
 .clear
 {
-    clear: both;   
+  clear: both;   
 }
 .noir
 {
-    color: black;
+  color: crimson;
+  text-shadow: none;
 }
 a
 {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 a:hover{
   color: black;
 }
 ul
 {
-    list-style: none;
+  list-style: none;
 }
 header {height: 150px;  background-color: crimson;}
-h1{float: left;margin-top: 32px;}
+h1{
+  float: left;
+  margin-top: 32px; 
+  text-shadow: 2px 2px 2px crimson;
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: black;
+}
 nav{float: right;   margin-top: 50px;}
 nav > ul > li{display: inline-block;}
 nav > ul > li > a
