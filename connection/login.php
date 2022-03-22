@@ -18,10 +18,11 @@
         // print_r($r) ;
         $_SESSION['nom'] = $r['nom'];
         $_SESSION['prenom'] = $r['prenom'];
-        $_SESSION['id_role'] = $r['id_role'];
-        $_SESSION['role'] = $r['role'];
+        $_SESSION['id_role'] = $r['iD_role'];
+        $_SESSION['role'] = $r['type_role'];
+        header("location: ../slider.php");
     }else {
-        redirection: header("<location:>connecter.html");
+        header("location: /connecter.html");
     }
 
     ?>
