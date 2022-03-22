@@ -3,7 +3,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
  footer{
-  background: black;
+  background: crimson;
   position:absolute;
   bottom:0;
   width:100%;
@@ -15,18 +15,23 @@
    text-align: left;
  }
  header{
-   background-image: url(img/img1.png);
+   background-color: crimson;
+   height: 100px;
  }
  h2{
-   color: crimson;
+   color: white;
    font-size: 35px;
-   background-color: black;
-   height: 50px;
    margin: auto;
+   padding-top: 30px;
+ }
+ .footer > a{
+   color: white;
+   display: flex;
+   justify-content: center;
  }
  body {
     margin: 0;
-    background: lightgray;
+    background: black;
     text-align: center;
     font-family: sans-serif;
     color: white;
@@ -51,8 +56,10 @@
     left: 10px;
     right: 10px;
     background-size: cover;
-    box-shadow:inset 0 0 0 2000px rgba(0,0,0,0.5);
+    box-shadow:inset 0 0 0 2000px rgb(0,0,0,0.3);
     display: flex;
+    border: solid white 2px;
+    border-radius: 10px;
   }
 
   .carousel__face:nth-child(1) {
@@ -94,7 +101,6 @@
   /* FIN CSS CRAOUSEL */
 
 
-
   /* DÉBUT NAVBAR */
 
   nav 
@@ -102,7 +108,7 @@
       margin: 100px auto;
       width: 50%;
       height: 100px;
-      background: black;
+      background: crimson;
   }
   nav .main_pages 
   {
@@ -123,16 +129,14 @@
   }
   nav a:hover 
   {
-      background: crimson;
+      background: black;
       opacity: 0.9;
   }
-
-  /* DÉBUT CSS RESPONSIVE */
-
   label
   {
     display: none;
   }
+  /* DÉBUT CSS RESPONSIVE */
   @media all and (max-width: 991px)
   {
   nav
@@ -159,7 +163,6 @@
   {
       display: none;
   }
-
   @media all and (max-width: 991px)
   {
   nav
