@@ -1,9 +1,9 @@
 <?php
 session_start();
 
-$prod = $pdo -> prepare("SELECT produit.nom, produit.description, produit.prix_HT FROM produit");
+$prod = $pdo -> prepare("SELECT produit.nom, produit.description, produit.prix_HT, produit.photo FROM produit");
 $prod -> execute();
-$prodinfos = $prod -> fetchAll();
+$P = $prod -> fetchAll();
 ?>
 
 <!DOCTYPE html>
