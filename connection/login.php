@@ -14,14 +14,14 @@
     $sql->execute([$email, $password]);
     $r = $sql->fetch();
 
-    if ($sql->rowCount() > 0) {
+    if ($sql->rowCount() >= 1) {
         // print_r($r) ;
         $_SESSION['nom'] = $r['nom'];
         $_SESSION['prenom'] = $r['prenom'];
         $_SESSION['id_role'] = $r['id_role'];
         $_SESSION['role'] = $r['role'];
     }else {
-        redirection: header("location:connecter.html");
+        redirection: header("<location:>connecter.html");
     }
 
     ?>
