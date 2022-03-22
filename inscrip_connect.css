@@ -13,7 +13,7 @@ button {
 .container {
   border: 1px solid;
   width: 100%;
-  min-height: 90vh;
+  min-height: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -26,7 +26,7 @@ button {
   align-items: center;
   width: 390px;
   min-height: 25vh;
-  background: rgb(53, 53, 53);
+  background: #333333;
   border-radius: 15px;
 }
 button {

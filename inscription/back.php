@@ -19,7 +19,7 @@
     $sqlmail = $pdo->prepare("SELECT * FROM `utilisateur` WHERE `email` LIKE = ?");
     $sqlmail->execute([$mail]);
     if ($sqlmail->rowCount() == 1) {
-        redirection: header("Location:");
+        header("Location: ../slider.php");
     } else {
         echo "vous etes bien inscrit" . "<br>";
     }
