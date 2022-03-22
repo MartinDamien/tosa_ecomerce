@@ -45,6 +45,7 @@ nav
 #search
 {
   text-align: left;
+  z-index: 2;
   justify-content: left;
 
 }

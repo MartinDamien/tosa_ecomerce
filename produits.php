@@ -1,5 +1,9 @@
 <?php
 session_start();
+
+$prod = $pdo -> prepare("SELECT produit.nom, produit.description, produit.prix_HT FROM produit");
+$prod -> execute();
+$prodinfos = $prod -> fetchAll();
 ?>
 
 <!DOCTYPE html>
@@ -20,7 +24,7 @@ session_start();
             <div class="main_pages">
                 <a href="inscription/inscription.html">Inscription</a>
                 <a href="connection/connecter.html">Connexion</a>
-                <a href="produits.php">Produits</a>
+                <a href="slider.php">Accueil</a>
             </div>
             <div id="search">
                 <form action="recherche.php" id="search"  method="GET">
@@ -39,7 +43,9 @@ session_start();
                 <div class="middle">
                 <div class="text">
                     <h3>Imprimante à Patrick</h3>
-                    <p>Blablablablabla</p>
+                    <p><?php echo 
+                
+                    ?></p>
                 </div>
                 </div>
             </div>
