@@ -2,6 +2,43 @@
 
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+.wrapper
+{
+    width: 940px;
+    margin: 0 auto;    
+    padding: 0 10px;
+}
+.clear
+{
+    clear: both;   
+}
+.noir
+{
+    color: black;
+}
+a
+{
+    text-decoration: none;
+    color: #444;
+}
+ul
+{
+    list-style: none;
+}
+header {height: 150px;  background-color: crimson;}
+h1{float: left;margin-top: 32px;}
+nav{float: right;   margin-top: 50px;}
+nav > ul > li{display: inline-block;}
+nav > ul > li > a
+{
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-right: 20px;
+}
+label
+{
+  display: none;
+}
  footer{
   background: crimson;
   position:absolute;
@@ -14,20 +51,16 @@
  footer>.footer{
    text-align: left;
  }
- header{
-   background-color: crimson;
-   height: 100px;
- }
+.footer > a{
+  color: white;
+  display: flex;
+  justify-content: center;
+}
  h2{
    color: white;
    font-size: 35px;
    margin: auto;
    padding-top: 30px;
- }
- .footer > a{
-   color: white;
-   display: flex;
-   justify-content: center;
  }
  body {
     margin: 0;
@@ -101,51 +134,13 @@
   /* FIN CSS CRAOUSEL */
 
 
-  /* DÉBUT NAVBAR */
-
-  nav 
-  {
-      margin: 100px auto;
-      width: 50%;
-      height: 100px;
-      background: crimson;
-  }
-  nav .main_pages 
-  {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-  }
-  nav .main_pages a 
-  {
-      width: 25%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100px;
-      text-decoration: none;
-      color: white;
-      font-size: 20px;
-  }
-  nav a:hover 
-  {
-      background: black;
-      opacity: 0.9;
-  }
-  label
-  {
-    display: none;
-  }
+  
   /* DÉBUT CSS RESPONSIVE */
   @media all and (max-width: 991px)
   {
   nav
   {
       height: 60px;
-  }
-  nav .main_pages 
-  {
-    display: none;
   }
   label 
   {
@@ -168,16 +163,6 @@
   nav
   {
     height: 60px;
-  }
-  nav .main_pages 
-  {
-  display: none;
-  flex-direction: column;
-  background: lightslategray;
-  height: 220px;
-  }
-  nav .main_pages a {
-  width: 50%;
   }
   label 
   {
