@@ -43,9 +43,8 @@ $prodinfos = $prod -> fetchAll();
                 <div class="middle">
                 <div class="text">
                     <h3>Imprimante à Patrick</h3>
-                    <p><?php echo 
-                
-                    ?></p>
+                    <p> <?php echo ""?>
+                    </p>
                 </div>
                 </div>
             </div>
