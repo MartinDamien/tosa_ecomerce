@@ -19,7 +19,10 @@
 a
 {
     text-decoration: none;
-    color: #444;
+    color: white;
+}
+a:hover{
+  color: black;
 }
 ul
 {

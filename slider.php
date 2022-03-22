@@ -13,10 +13,10 @@
         <label for="toggle">☰</label>
          <input type="checkbox" id="toggle">
             <ul>
-                <li><a href="#main-image">Accueil</a></li>
-                <li><a href="#steps">Inscription</a></li>
-                <li><a href="#possibilities">Connexion</a></li>
-                <li><a href="#contact">Produits</a></li>
+                <li><a href="slider.php">Accueil</a></li>
+                <li><a href="inscription/inscription.html">Inscription</a></li>
+                <li><a href="connection/connecter.html">Connexion</a></li>
+                <li><a href="produits.php">Produits</a></li>
             </ul>
         </nav>
     </div>
