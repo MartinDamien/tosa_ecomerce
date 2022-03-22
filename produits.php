@@ -22,6 +22,12 @@ session_start();
                 <a href="connection/connecter.html">Connexion</a>
                 <a href="produits.php">Produits</a>
             </div>
+            <div id="search">
+                <form action="recherche.php" id="search"  method="GET">
+                    <input type="search" name="research" id="research" placeholder="Que cherchez-vous?" />
+                    <button type="submit" form="search">Go</button>
+                </form>
+            </div>
         </div>
       </nav>
     </header>

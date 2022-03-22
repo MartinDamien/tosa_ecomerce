@@ -42,7 +42,12 @@ nav
       opacity: 0.9;
   }
 
+#search
+{
+  text-align: left;
+  justify-content: left;
 
+}
 
 body
 {
