@@ -1,6 +1,7 @@
 <?php
 session_start();
 
+require "connect.php";
 $prod = $pdo -> prepare("SELECT produit.nom, produit.description, produit.prix_HT FROM produit");
 $prod -> execute();
 $prodinfos = $prod -> fetchAll();
