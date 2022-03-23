@@ -12,19 +12,29 @@ button {
 }
 .container {
   width: 400px;
-  min-height: 90vh;
+  min-height: 65vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
-.wrap {
+.wrap_connection {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   width: 390px;
-  min-height: 25vh;
+  min-height: 22vh;
+  background: rgb(53, 53, 53);
+  border-radius: 15px;
+}
+.wrap_inscription {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 390px;
+  min-height: 38vh;
   background: rgb(53, 53, 53);
   border-radius: 15px;
 }
