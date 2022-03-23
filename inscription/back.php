@@ -1,8 +1,4 @@
-<!DOCTYPE html>
-<html lang="fr">
-
-<head>
-    <?php
+<?php
     require_once '../connect.php';
 
     $mail = $_POST['mail'];
@@ -19,23 +15,7 @@
     $sqlmail = $pdo->prepare("SELECT * FROM `utilisateur` WHERE `email` LIKE = ?");
     $sqlmail->execute([$mail]);
     if ($sqlmail->rowCount() == 1) {
+        header("Location: inscription");
+} else {
         header("Location: ../slider.php");
-    } else {
-        echo "vous etes bien inscrit" . "<br>";
-    }
-
-
-
-    ?>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-
-<body>
-
-    <a href="../slider.php">retour à la page principale</a>
-</body>
-
-</html>
+}

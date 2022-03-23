@@ -252,7 +252,7 @@ label
 }
 
 /* Image Hover */
-div>container {
+  div>container {
     position: relative;
     width: 100%;
   }
