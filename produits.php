@@ -16,13 +16,13 @@ $P = $prod->fetchAll();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" />
-    <title>Nos produits</title>
+    <title>instatosa - nos produits</title>
 </head>
 
 <body>
     <header>
         <div class="wrapper">
-            <h1><span class="noir">&#x25C6;</span>ACCUEIL<span class="noir">&#x25C6;</span></h1>
+            <h1><span class="noir">&#x25C6;</span>INSTATOSA<span class="noir">&#x25C6;</span></h1>
             <nav>
                 <label for="toggle">☰</label>
                 <input type="checkbox" id="toggle">
