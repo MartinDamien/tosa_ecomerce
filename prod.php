@@ -2,6 +2,4 @@
 require "connect.php";
 
 
-
-
 ?>
