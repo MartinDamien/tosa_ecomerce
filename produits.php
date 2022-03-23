@@ -1,8 +1,8 @@
 <?php
 session_start();
+require "connect.php";
 
 $prod = $pdo -> prepare("SELECT produit.nom, produit.description, produit.prix_HT, produit.photo FROM produit");
-require "connect.php";
 
 $prod -> execute();
 $P = $prod -> fetchAll();
@@ -44,7 +44,7 @@ $P = $prod -> fetchAll();
         <?php
             foreach($P as $index)
             {
-                echo'<div class="container"><img src='.$index["photo"].'class="image" style="width:100%">
+                echo'<div class="container"><img src="img/'.$index["photo"].'" class="image" style="width:100%">
                         <div class="middle">
                             <div class="text">
                                 <h3>'.$index["nom"].'</h3>
@@ -53,7 +53,7 @@ $P = $prod -> fetchAll();
                             </div>
                         </div>
                     </div>';
-            }
+            } 
         ?>
     </div>
     </section>
