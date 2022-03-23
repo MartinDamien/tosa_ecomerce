@@ -31,7 +31,7 @@ if ($sql->rowCount() > 0) {
     echo $_SESSION['id_role'];
     echo $_SESSION['role'];
 
-    header("ocation: ../slider.php");
+    header("location: ../slider.php");
 
 } else {
     header("location: connecter.html");
