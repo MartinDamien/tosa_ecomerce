@@ -10,4 +10,3 @@ $searching = $research -> fetchAll();
 echo "<pre>";
 print_r($searching); 
 echo "</pre>";
-?>
