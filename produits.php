@@ -37,7 +37,7 @@ $P = $prod->fetchAll();
         <div id="search">
             <form action="recherche.php" method="get" id="search">
                 <input type="search" name="research" id="research" placeholder="Que cherchez-vous?" />
-                <button type="submit" form="search">Go</button>
+                <button type="submit" action="recherche.php" form="search">Go</button>
             </form>
         </div>
         </div>
@@ -50,7 +50,7 @@ $P = $prod->fetchAll();
             <div id="produits">
                 <?php
                 foreach ($P as $index) {
-                    echo '<div class="container"><img src=img/' . $index["photo"] . ' class="image" style="width:100%">
+                    echo '<div class="blockimg respimg"><img src=img/' . $index["photo"] . ' class="image" style="width:100%">
                         <div class="middle">
                             <div class="text">
                                 <h3>' . $index["nom"] . '</h3>

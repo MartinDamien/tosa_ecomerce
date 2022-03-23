@@ -230,7 +230,7 @@ label
 #produits
 {
     display: grid;
-    grid-template-columns: repeat(3, 29%);
+    grid-template-columns: repeat(3, 400px);
     grid-template-rows: repeat(3, 400px);
     column-gap: 1em;
     row-gap: 1em;
@@ -243,16 +243,33 @@ label
     border: 2px;
 }
 
-#p1
+.blockimg
 {
-    background-repeat: no-repeat;
-    background-origin: padding-box;
-    background-position: center ;
-
+  width: 320px;
+  margin: 100px auto 0 auto;
+  perspective: 1000px;
+  height: 400px auto;
 }
 
+div p
+{
+  font-size: 12px;
+}
+
+p strong
+{
+  font-size: 15px;
+}
+
+.respimg
+{
+  max-width: 100%;
+  height: auto;
+}
+
+
 /* Image Hover */
-  div>container {
+  div>blockimg {
     position: relative;
     width: 100%;
   }
@@ -281,11 +298,11 @@ label
     text-align: center;
   }
   
-  .container:hover .image {
+  .blockimg:hover .image {
     opacity: 0.3;
   }
   
-  .container:hover .middle {
+  .blockimg:hover .middle {
     opacity: 1;
   }
   

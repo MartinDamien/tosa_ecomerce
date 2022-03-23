@@ -42,11 +42,22 @@ require "connect.php";
     $research = $pdo->prepare("SELECT * FROM produit WHERE nom LIKE '%$entry%' OR nom LIKE '%$maj%' OR description LIKE '%$entry%' OR description LIKE '%$maj%' OR prix_HT LIKE '%$entry%' ");
     $research->execute();
     $searching = $research->fetchAll();
-
-    echo "<pre>";
-    print_r($searching);
-    echo "</pre>";
     ?>
+
+    <div class="trouvé">
+        <?php 
+        foreach ($searching as $index) {
+            echo '<div class="blockimg"><img src=img/' . $index["photo"] . ' class="image" style="width:100%">
+                <div class="middle">
+                    <div class="text">
+                        <h3>' . $index["nom"] . '</h3>
+                        <p>' . $index["description"] . '</p>
+                        <p><strong>' . $index["prix_HT"] . ' €</strong></p>
+                    </div>
+                </div>
+            </div>';
+        } ?>
+    </div>
 </body>
 
 </html>
