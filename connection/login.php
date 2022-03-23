@@ -1,38 +1,38 @@
-<!DOCTYPE html>
-<html lang="fr">
+<?php
+session_start();
 
-<head>
-    <?php
-    require_once '../connect.php';
-    $email = $_POST['email'];
-    $password = $_POST['password'];
 
-    // password_verify($password, $hash);
+require_once '../connect.php';
+$email = $_POST['email'];
+$password = $_POST['password'];
 
-    $req = "SELECT utilisateur.email, utilisateur.password, utilisateur.nom, utilisateur.prenom, utilisateur.iD_role, role.type_role FROM utilisateur, role;  WHERE email = ? AND password = ? AND role.id = utilisateur.id_role";
-    $sql = $pdo->prepare($req);
-    $sql->execute([$email, $password]);
-    $r = $sql->fetch();
+// password_verify($password, $hash);
 
-    if ($sql->rowCount() >= 1) {
-        // print_r($r) ;
-        $_SESSION['nom'] = $r['nom'];
-        $_SESSION['prenom'] = $r['prenom'];
-        $_SESSION['id_role'] = $r['iD_role'];
-        $_SESSION['role'] = $r['type_role'];
-        header("location: ../slider.php");
-    }else {
-        header("location: /connecter.html");
-    }
 
-    ?>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>wait</title>
-</head>
+$req = "SELECT utilisateur.email, utilisateur.password, utilisateur.nom, utilisateur.prenom, utilisateur.iD_role, role.type_role FROM utilisateur, role  WHERE email = '$email' AND password = '$password' AND role.id = utilisateur.id_role";
+$sql = $pdo->prepare($req);
+$sql->execute();
+$r = $sql->fetch();
 
-<body>
-</body>
+echo "<pre>";
+echo $email;
+echo $password;
+echo "</pre>";
 
-</html>
+if ($sql->rowCount() > 0) {
+    
+    $_SESSION['nom'] = $r['nom'];
+    $_SESSION['prenom'] = $r['prenom'];
+    $_SESSION['id_role'] = $r['iD_role'];
+    $_SESSION['role'] = $r['type_role'];
+
+    echo $_SESSION['nom'];
+    echo $_SESSION['prenom'];
+    echo $_SESSION['id_role'];
+    echo $_SESSION['role'];
+
+    header("ocation: ../slider.php");
+
+} else {
+    header("location: connecter.html");
+}
