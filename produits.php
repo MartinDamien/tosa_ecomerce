@@ -35,7 +35,7 @@ $P = $prod->fetchAll();
             </nav>
         </div>
         <div id="search">
-            <form action="recherche.php" id="search" method="GET">
+            <form action="recherche.php" method="get" id="search">
                 <input type="search" name="research" id="research" placeholder="Que cherchez-vous?" />
                 <button type="submit" form="search">Go</button>
             </form>

@@ -11,8 +11,7 @@ button {
   cursor: pointer;
 }
 .container {
-  border: 1px solid;
-  width: 100%;
+  width: 400px;
   min-height: 90vh;
   display: flex;
   flex-wrap: wrap;
