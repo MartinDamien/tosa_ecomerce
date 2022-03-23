@@ -50,7 +50,7 @@ $P = $prod->fetchAll();
             <div id="produits">
                 <?php
                 foreach ($P as $index) {
-                    echo '<div class="container"><img src=' . $index["photo"] . 'class="image" style="width:100%">
+                    echo '<div class="container"><img src=img/' . $index["photo"] . ' class="image" style="width:100%">
                         <div class="middle">
                             <div class="text">
                                 <h3>' . $index["nom"] . '</h3>
