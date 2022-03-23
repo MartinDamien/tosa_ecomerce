@@ -55,7 +55,7 @@ $P = $prod->fetchAll();
                             <div class="text">
                                 <h3>' . $index["nom"] . '</h3>
                                 <p>' . $index["description"] . '</p>
-                                <p><strong>' . $index["prix_HT"] . '</strong></p>
+                                <p><strong>' . $index["prix_HT"] . ' €</strong></p>
                             </div>
                         </div>
                     </div>';
