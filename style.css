@@ -36,7 +36,7 @@ header {
 }
 h1{
   float: left;
-  margin-top: 32px; 
+  margin-top: 32px;
   text-shadow: 2px 2px 2px crimson;
   border: 2px solid white;
   border-radius: 10px;
@@ -45,7 +45,7 @@ h1{
   box-shadow: 2px 2px 2px black;
 }
 nav{
-  float: right;  
+  float: right;
   margin-top: 50px;
 }
 nav > ul > li{
